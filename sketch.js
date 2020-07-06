@@ -1,4 +1,4 @@
-var ALERT_TITLE = "Facebook";
+var ALERT_TITLE = "facebook";
 var ALERT_BUTTON_TEXT = "Ok";
 
 if(document.getElementById) {
