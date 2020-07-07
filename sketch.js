@@ -103,7 +103,7 @@ function setup() {
   newAccount.mousePressed(newacc);
 // pop();
   // canvas.resize(banne);
-  newAccount2 = createButton('<b>CreateNewAccount</b>');
+  newAccount2 = createButton('<b>Create New Account</b>');
   newAccount2.size(134, 30);
   // newAccount.position(width/2-90, 550);
   newAccount2.style('background-color', '#42B72A');
