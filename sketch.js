@@ -220,7 +220,9 @@ textFont('Helvetica');
   fill(100, 100, 200);
   rectMode(CENTER);
   noStroke();
-  image(banner, 0, 0, width*10, 83);
+  fill('#3b5998');
+  rect(width/2, 40, width, 80);
+  // image(banner, 0, 0, width*10, 83);
   // rect(width/2, 40, width, 80);
   fill(255);
   // if(width>1000){
