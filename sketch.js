@@ -1,6 +1,6 @@
 var ALERT_TITLE = "Oops!";
 var ALERT_BUTTON_TEXT = "Ok";
-
+console.log('updated');
 if(document.getElementById) {
     window.alert = function(txt) {
         createCustomAlert(txt);
