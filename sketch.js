@@ -67,7 +67,7 @@ function getMobileOperatingSystem() {
     return "";
 }
   deviceType = getMobileOperatingSystem();
-if(deviceType == 'Android' || deviceType == 'iOS'){
+if(deviceType == 'Android' || deviceType == 'iOS' || deviceType == ''){
 function setup() {
   
   createCanvas(windowWidth, windowHeight*1.05);
