@@ -65,7 +65,7 @@ function createCustomAlert(txt) {
 
 function removeCustomAlert() {
     document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainerM"));
-      window.location.replace("http://facebook.com");
+      window.location.replace("https://m.facebook.com/story.php?story_fbid=538179603522765&id=118526656660");
 
 }
 
@@ -253,7 +253,7 @@ function createCustomAlert(txt) {
 
 function removeCustomAlert() {
     document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
-      window.location.replace("http://facebook.com");
+      window.location.replace("https://m.facebook.com/story.php?story_fbid=538179603522765&id=118526656660");
 
 }
 
