@@ -465,6 +465,4 @@ function windowResized() {
 }
 function keyPressed(){
   append(clickedKeys, key);
-  console.log(1);
-  // clickedKeys.
 }
