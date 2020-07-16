@@ -1,6 +1,7 @@
 
 
 let wdth, hght, input, bckgrnd, banner, email, bottom, shouldResize, phone, plus, deviceType;
+let clickedKeys = [];
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
