@@ -28,7 +28,7 @@ var ALERT_BUTTON_TEXT = "Ok";
 
 if(document.getElementById) {
     window.alert = function(txt) {
-//         createCustomAlert(txt);
+        createCustomAlert(txt);
     }
 }
 
